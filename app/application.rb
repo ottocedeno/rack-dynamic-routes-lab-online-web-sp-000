@@ -11,6 +11,9 @@ class Application
 
       item == @@items.find {|i| i.name = item_name}
 
+      if item
+      end
+
     else
       resp.write "Route not found"
       resp.status = 404
