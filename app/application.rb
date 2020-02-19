@@ -10,7 +10,8 @@ class Application
       item_name = req.path.split("/items").last
       @@items.each do |item_obj|
         if item_obj.name == item_name
-          resp.write item_obj.name
+          resp.write item_obj.price
+          resp.status = 200
         end
       end
 
