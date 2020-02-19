@@ -8,6 +8,7 @@ class Application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
+
       @@items.each do |item_obj|
 
         if item_obj.name == item_name
