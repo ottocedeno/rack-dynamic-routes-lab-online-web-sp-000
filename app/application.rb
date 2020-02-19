@@ -6,6 +6,7 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/testing/)
+      resp.write "I work"
     binding.pry
   end
 end
