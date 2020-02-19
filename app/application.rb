@@ -12,7 +12,8 @@ class Application
       item = @@items.find {|i| i.name == item_name}
       binding.pry
       if item
-
+        resp.write item.price
+        resp.status = 200
       end
 
     else
