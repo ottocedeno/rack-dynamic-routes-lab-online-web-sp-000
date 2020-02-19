@@ -14,6 +14,8 @@ class Application
       if item
         resp.write item.price
         resp.status = 200
+      else
+        error_404(resp)
       end
 
     else
