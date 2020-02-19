@@ -17,9 +17,11 @@ class Application
           error_404
         end
       end
+
     else
       error_404
     end
+
     resp.finish
   end
 
