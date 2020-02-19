@@ -9,7 +9,7 @@ class Application
       resp.write "I work"
     else
       resp.write "Route not found"
-      resp.status 400
+      resp.status = 404
     binding.pry
   end
 end
