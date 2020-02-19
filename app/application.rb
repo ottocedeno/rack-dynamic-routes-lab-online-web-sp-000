@@ -14,19 +14,18 @@ class Application
           resp.write item_obj.price
           resp.status = 200
         else
-          error_404
+          resp.write "Route not found"
+          resp.status = 404
         end
       end
 
     else
-      error_404
+      resp.write "Route not found"
+      resp.status = 404
     end
 
     resp.finish
   end
 
-  def error_404
-    resp.write "Route not found"
-    resp.status = 404
-  end
+  
 end
