@@ -24,7 +24,7 @@ class Application
     resp.finish
   end
 
-  def error_404
+  def error_404(resp)
     resp.write "Route not found"
     resp.status = 404
   end
