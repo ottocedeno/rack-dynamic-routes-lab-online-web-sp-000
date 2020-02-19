@@ -14,7 +14,6 @@ class Application
           resp.status = 200
         end
       end
-      binding.pry
     else
       resp.write "Route not found"
       resp.status = 404
