@@ -17,7 +17,7 @@ class Application
       end
 
     else
-
+      error_404
     end
 
 
