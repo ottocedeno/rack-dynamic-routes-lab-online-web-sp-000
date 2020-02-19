@@ -7,6 +7,8 @@ class Application
 
     if req.path.match(/testing/)
       resp.write "I work"
+    else
+      resp.write "Route not found"
     binding.pry
   end
 end
