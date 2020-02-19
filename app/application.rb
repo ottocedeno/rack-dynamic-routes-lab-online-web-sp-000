@@ -7,7 +7,7 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path.match(/items/)
-      item_name = req.path
+      item_name = req.path.split("/items").last
       binding.pry
       resp.write "I work"
     else
