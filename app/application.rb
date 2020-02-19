@@ -22,4 +22,7 @@ class Application
     resp.finish
   end
 
+  def error_404
+
+  end
 end
