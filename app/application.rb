@@ -17,7 +17,7 @@ class Application
       end
 
     else
-      error_404
+      error_404(resp)
     end
 
 
