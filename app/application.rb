@@ -19,7 +19,8 @@ class Application
       end
 
     else
-      error_404(resp)
+      resp.write "Route not found"
+      resp.status = 404
     end
 
 
