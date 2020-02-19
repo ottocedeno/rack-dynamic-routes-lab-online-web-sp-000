@@ -13,6 +13,8 @@ class Application
         if item_obj.name == item_name
           resp.write item_obj.price
           resp.status = 200
+        else
+          error_404
         end
       end
     else
